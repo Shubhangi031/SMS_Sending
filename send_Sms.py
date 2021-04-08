@@ -38,11 +38,12 @@ root.title=("Message")
 root.geometry("400x500")
 font=("Helvetica",20,"bold")
 
-textnumber=Entry(root,font=font)
-textnumber.pack(fill=X,pady=20)
+Reciver = Label(root,text = "TO").place(x = 20)  
+textnumber=Entry(root,font=font),padx=20)
 
+Recivermsg = Label(root,text = "Message").place(x = 20,y=55)  
 textmsg=Text(root)
-textmsg.pack(fill=X)
+textmsg.pack(fill=X,padx=20)
 
 sendbtn=Button(root,text="Send SMS",command=btn_click)
 sendbtn.pack()
